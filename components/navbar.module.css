@@ -1,0 +1,53 @@
+.navhead{
+  position: sticky;
+  position:relative;
+}
+.navhead ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+  }
+  
+.navhead  li {
+    float: left;
+  }
+  
+.navhead  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.navhead  li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    text-decoration-color: yellow;
+  }
+.navhead li h1{
+    margin-left: 6rem;
+    color:white;
+    font-size:2rem
+}
+.navleft{
+    float:right !important;
+    margin:1rem;
+    padding:1rem;
+}
+.circle{
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+}
+.itemleft{
+  margin:1rem;
+  filter: invert(100%);
+  color:black
+}

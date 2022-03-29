@@ -1,0 +1,21 @@
+
+.margin{
+    margin-left:5rem;
+}
+.col_grey {
+    max-width:30%!important;
+    background-color: #414141;
+}
+.col_darker {
+    background-color: #2b2a2a;
+}
+.para{
+    width:70%
+}
+.col_small{
+    margin-left:5rem;
+    max-width: 20%;
+}
+.list li{
+    margin-bottom:2rem;
+}
