@@ -1,7 +1,7 @@
-import styles from "./top.module.css";
+import styles from "./search-theater.module.css";
 import Image from "next/image";
 
-export default function Top() {
+export default function searchTheater() {
   return (
     <div className={styles.container}>
       <div className="row">
@@ -15,12 +15,10 @@ export default function Top() {
         </div>
         <div className={styles.loader}></div>
         <div className="col-title">
-          <h1 className={styles.title}>Find your movies here!</h1>
-          <span className={styles.desc}>
-            {" "}
-            Explore our gallery full of exciting films from all around the globe
-            only for your entertainments. No hidden charges or disturbing ads.
-          </span>
+          <h1 className={styles.title}>Search your movies here!</h1>
+          <input className={styles.form_text} type="text" placeholder="Search by theatre"></input>
+          <input className={styles.form_date} type="datetime" placeholder="Search"></input>
+          <button className={styles.button}>Search</button>
         </div>
       </div>
     </div>

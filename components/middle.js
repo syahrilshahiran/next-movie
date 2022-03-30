@@ -1,7 +1,9 @@
 import styles from "./middle.module.css";
 import Image from "next/image";
-
+import { useRouter } from 'next/router'
 function Middle({movie}) {
+  const router = useRouter()
+  
   return (
     
     <div className={styles.container}>
@@ -10,7 +12,7 @@ function Middle({movie}) {
           <h1>New Releases</h1>
         </div>
         <div className="col">
-          <div className={styles.view}>
+          <div className={styles.view_more}>
             <h2>View More</h2>
           </div>
         </div>
@@ -19,7 +21,7 @@ function Middle({movie}) {
         {movie.data.map((movie,i) => {
           return (
             <div key={movie.Movie_ID}>
-              {card(i,movie)}
+              {card(i,movie,router.asPath)}
             </div>
           );
         })}
@@ -30,21 +32,33 @@ function Middle({movie}) {
 function upperCase(string){
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
-function card(i,movie){
-  if(i==0){
-    return (
-    <div className={styles.card_big}>
-      
-      {card_inner(movie)}
-      <div className={styles.card_overlay}></div>
-    </div>)
-  }else{
+function card(i,movie,url){
+  if(url=='/'){
+    if(i==0){
+      return (
+      <div className={styles.card_big}>
+        
+        {card_inner(movie)}
+        <div className={styles.card_overlay}></div>
+      </div>)
+    }else{
+      return (
+        <div className={styles.card}>
+          {card_inner(movie)}
+          <div className={styles.card_overlay}></div>
+        </div>)
+    }
+  }else if(url=="/search-theatre"||url=="/search-time"){
     return (
       <div className={styles.card}>
         {card_inner(movie)}
         <div className={styles.card_overlay}></div>
       </div>)
   }
+    
+  
+  
+}
 function card_inner(movie){
   return(
     <>
@@ -76,11 +90,11 @@ function card_inner(movie){
               alt="eye
               "
             />
-            <label className={styles.view}>{movie.Views}</label>
+            <label className={styles.view}>{movie.Views} views</label>
           </span>
         </div>
     </>
   )
 }
-}
+
 export default Middle;

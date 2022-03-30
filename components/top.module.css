@@ -2,6 +2,7 @@
     max-width: 60rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
+    padding-bottom: 4rem;
   }
 .title{
   font-size: 4rem;
@@ -10,4 +11,15 @@
 .desc{
   color: white;
 }
-  
+.loader {
+  position:absolute;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-left: 10px solid yellow;
+  border-right: 10px solid yellow;
+  border-bottom: 10px solid yellow;
+  width: 250px;
+  height: 250px;
+  right:65rem;
+  top:10rem
+}

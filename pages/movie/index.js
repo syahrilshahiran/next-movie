@@ -13,15 +13,15 @@ function Movie() {
         
       </Head>
       <div>
-        <Nav />
-        <Top />
+        
+        
         <AppConsumer>
-          {movie => {
-            return <Middle movie={movie} />;
+          
+          {(movie) => {
+            return <Middle movie={movie}/>;
           }}
         </AppConsumer>
-        {/* <Middle movie={movie} /> */}
-        <Footer />
+        
       </div>
     </>
   );

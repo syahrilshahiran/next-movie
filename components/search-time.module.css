@@ -1,0 +1,65 @@
+.container {
+    max-width: 60rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+    padding-bottom: 5rem;
+  }
+.title{
+  font-size: 2rem;
+  color:white
+}
+.form_text{
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    background-color: none;
+    background-image: url('../public/search.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+    border-radius: 3rem;
+  }
+.form_date{
+    padding-left:1rem;
+    width: 40%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    background-color: none;
+    background-image: url('../public/calendar.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+    border-radius: 3rem;
+    margin-left:1rem;
+}
+.desc{
+  color: white;
+}
+.loader {
+  position:absolute;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-left: 10px solid gold;
+  border-right: 10px solid gold;
+  border-bottom: 10px solid gold;
+  width: 250px;
+  height: 250px;
+  right:65rem;
+  top:10rem
+}
+.button{
+    cursor: pointer;
+    margin:1rem;
+    background-color:gold ;
+    border:1px solid gold;
+    border-radius:2rem;
+    width:6rem;
+    height:2.5rem;
+    font-size:1rem
+}

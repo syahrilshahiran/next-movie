@@ -2,9 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'DM Sans';
-  background-image: linear-gradient(to right, #414141 , #000000);
-  color:white
+  font-family: "DM Sans";
+  background-image: linear-gradient(to right, #414141, #000000);
+  color: white;
 }
 
 a {
@@ -15,22 +15,24 @@ a {
 * {
   box-sizing: border-box;
 }
-.row{
+.row {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
-.col-title{
+.col-title {
   flex: 0 0 60%;
   max-width: 60%;
 }
-.col-logo{
+.col-logo {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
+  margin-top: 5.5rem;
+  margin-left: 1.8rem;
 }
-.col{
+.col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;

@@ -2,11 +2,16 @@
 .margin{
     margin-left:5rem;
 }
+.title{
+    font-size: 4rem;
+}
 .col_grey {
+    padding-top:3rem;
     max-width:30%!important;
     background-color: #414141;
 }
 .col_darker {
+    padding-top:5rem;
     background-color: #2b2a2a;
 }
 .para{
@@ -17,5 +22,50 @@
     max-width: 20%;
 }
 .list li{
+    cursor: pointer;
     margin-bottom:2rem;
+    list-style-type: none;
+}
+.list li:nth-of-type(1){
+    font-weight: bold;
+}
+.email{
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    background-color: grey;
+    background-image: url('../public/arrow.svg');
+    background-position: 185px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    outline: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+.col_info{
+    width:90%;
+    margin-left:5rem;
+}
+.icon_svg{
+    filter: invert(100%);
+}
+.col_wide{
+    width:2rem;
+}
+.col_thin{
+    width: 1rem;
+}
+.box{
+    position: relative;
+    background-color: gold;
+    width: 2rem;
+    height: 2rem;
+    bottom:2.5rem;
+    left:11rem;
+    z-index: -1;
+}
+.info{
+    margin-left:0.5rem;
 }

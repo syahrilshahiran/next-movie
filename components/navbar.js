@@ -29,7 +29,7 @@ export default function Nav({ children }) {
             <a href="">Pricing</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="">Contact Us</a>
           </li>
           <li className={styles.navleft}>
             <span className={styles.itemleft}>
